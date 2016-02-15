@@ -1,4 +1,4 @@
-Styrktaraðilar
-========
+﻿Styrktaraðilar
+==============
 
 Þetta er kynningartexti
