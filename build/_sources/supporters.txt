@@ -1,0 +1,4 @@
+Styrktaraðilar
+========
+
+Þetta er kynningartexti
