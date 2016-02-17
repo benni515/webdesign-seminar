@@ -26,7 +26,7 @@ Til þess að bæta CSS skrá við HTML skránna þína er þetta ein mjög einf
 Stílar
 ______
 
-Stílar er það sem þú notar mest af í css, þú skrifar hvað þú ætlar að breyta og svo í hvað ætlaru að breyta því.
+Stílar er það sem þú notar mest af í css, þú skrifar hvaða stíl þú vilt breyta og svo í hvað.
 
 **Dæmi :**
 
@@ -98,7 +98,7 @@ Til að breyta stílum taga skrifaru nafnið á taginu, opnar sviga, skrifar hva
 		padding: 50px;
 	}
 
-Þetta myndi breyta öllum div tögum, gef þeim hæð og breydd 200px, svo myndi það bæta við padding, sem býr til pláss frá endum myndarinnar til að textar eða myndir inní tögunum sjéu ekki alveg úti á enda. Svo divið sjálft myndi vera 300px á hæð og breydd, því 50 pixlar myndu bætast á top, botn, hægri, og vinstri hlið kassans.
+Þetta myndi breyta öllum div tögum, gef þeim hæð og breydd 200px, svo myndi það bæta við padding, sem býr til pláss frá endum myndarinnar til að textar eða myndir inní tögunum séu ekki alveg úti á enda. Svo divið sjálft myndi vera 300px á hæð og breydd, því 50 pixlar myndu bætast á top, botn, hægri, og vinstri hlið kassans.
 
 Klassar
 _______
