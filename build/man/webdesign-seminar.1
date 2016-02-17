@@ -1,0 +1,203 @@
+.\" Man page generated from reStructuredText.
+.
+.TH "WEBDESIGN-SEMINAR" "1" "February 17, 2016" "0.0" "Webdesign-seminar"
+.SH NAME
+webdesign-seminar \- Webdesign-seminar Documentation
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.SH NÁMSKEIÐ
+.sp
+Þetta er kynningartexti
+.SS Dagur eitt
+.sp
+Hérna kemur efni
+.SS Uppsetning Vefsíðu
+.sp
+\fBHvernig byrjum við eiginlega?\fP
+.sp
+Til þess að geta byrjað að hanna vefsíður þurfum við fátt annað en vafra og notepad. Það eru samt til tól sem einfalda vinnuna töluvert, þar á meðal er \fI\%Sublime Text\fP með þeim bestu, en \fI\%Sublime Text\fP er ritvinnsluforrit sem er gætt þeim einstaklegu hæfileikum að gera vefforritun margfalt einfaldari. Það sem \fI\%Sublime Text\fP gerir sem einfaldar vinnuna svona mikið er meðal annars að lita ákveðin lykilorð á eitthvern sérstakann hátt, ásamt því að hann notar autocomplete til þess að láta okkur þurfa að skrifa mun minna en við þyrftum annars.
+.sp
+Fyrir utan að setja upp \fI\%Sublime Text\fP þurfum við einungis vafra \fI( \(gaFirefox\(ga_ , \(gaChrome\(ga_ , o.s.frv.)\fP        og þá getum við hafist handa.
+.sp
+\fBBeinagrind allra vefa\fP
+.sp
+Allir vefir eiga það sameiginlegt að vera með sömu grunn\-uppsetinguna, hvort sem það er Facebook, Google, eða vefsíðurnar sem að þið eruð að fara að setja saman í dag.
+.sp
+Auk þess að vera með haus og líkama, eru allar vefsíður líka með ákveðna merkingu efst, sem segja til um hverskonar skjal vafrinn á eiginlega að smíða úr textanum sem hann fær til sín.
+.sp
+Þessi beinagrind lítur svona út:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+    </body>
+</html>
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Hérna kynnist þið fyrstu \fI\%HTML tögunum\fP ykkar, html, head, body og title. Þessi tög hafa öll mjög sérstakan tilgang sem við munum fara útí eftir örskamma stund, en ég ætla að byrja á að útskýra hvernig HTML skjöl eru send yfir internetið og hvernig vafrinn ykkar nær síðan að birta eitthverjar vefsíður út úr þessum HTML tögum.
+.INDENT 0.0
+.INDENT 3.5
+.SS Todo
+.sp
+Strúktúr HTML taga
+.UNINDENT
+.UNINDENT
+.sp
+Þegar að HTML skjöl eru send yfir internetið eru þau send með samskiptahefð \fI(e. protocol)\fP sem kallast HTTP. Þegar að vafrinn byður netþjón fyrst um eitthverja vefsíðu, til dæmis þegar þið farið inn á \fIgoogle.com\fP er fyrst sent það HTML skjal sem netþjónninn segir að eigi að vera sent fyrst, en það skjal heitir í nánast því öllum tilvikum \fIindex.html\fP\&. Þegar að vafrinn er búinn að fá þessa vefsíðu frá netþjóninum byrjar hann á því að reyna að túlka hana. Þetta gerir vafrinn með því að skruna yfir skjalið og \fIrendera\fP það sem er inn í HTML tögunum á þann hátt sem er skilgreindur í skjalinu. Það sem þessi túlkur gerir fyrst er að lesa það sem er inni í <head> tögunum.
+.sp
+Það sem við geymum inni í <head> tögunum er það sem við viljum að vafrinn nái í áður en að restin af vefsíðunni, geymd inni í <body>, er \fIrenderuð\fP\&. Þetta myndi til dæmis vera allskonar skriptur eða önnur mikilvæg skjöl sem vefsíðan þarf til að starfa á eðlilegann hátt
+.INDENT 0.0
+.INDENT 3.5
+.SS Todo
+.sp
+Real\-world dæmi um þetta
+.UNINDENT
+.UNINDENT
+.sp
+Nú þegar að við erum komin með þennan grunn, skulum við demba okkur dýpra í hvernig við getum notað HTML tög til þess að búa til vefi
+.SS HTML Tög
+.sp
+\fBÞað sem þarf að hafa í huga varðandi HTML tög\fP
+.sp
+Núna ætlum við að nánar um HTML tög. Tilgangur HTML taga er einfaldlega sá að merkja textann sem ætlum að hafa í vefsíðunni til þess að geta unnið síðan nánar með hann í CSS og JavaScript. Í gamla daga, þegar að CSS var ekki eins stórt mál og það er núna voru vefsíður látnar líta vel út með því að láta HTML tögin sjá um að stýla textann. Þetta er ekki gert lengur, en það er mikilvægt að hafa þetta í huga vegna þess að HTML tög eru ennþá með ákveðna grunnstýla áfasta. Við munum útskýra þetta allt nánar þegar að við lærum meira um CSS.
+.sp
+\fBMerking með HTML\fP
+.sp
+Þegar að við erum að sjá fyrir okkur merkingar með HTML er mjög hjálplegt að ýminda sér hús. Ef að við merkjum hvern einasta hlut í herbergi eftir því hvað þessi hlutur inniheldur, verður það fljótt mjög einfalt að miða á eitthvern einn hlut í húsinu, segjum til dæmis að við viljum miða á eitthvern stól í eldhúsinu. Ef við þekkjum ekkert til hússins byrjum við kannski að skoða það að utan og spurjum okkur, er þetta rétt húsnúmer, býr rétta fólkið hérna? Til þess að fá svar við þessum spurningum er hentugt að virða húsið fyrir okkur að utan, því það veitir okkur allskyns upplýsingar um húsið án þess að þurfa að fara inn í það. Ef allt er í góðu og við erum fyrir utan rétta húsið er tilvalið að ganga bara beint inn. Þegar að við förum fyrst inn í húsið þurfum við að ákveða hvaða hluta hússins við ætlum að ganga að næst, ætlum við á efri eða neðri hæðina, hver hæð fyrir sig er síðan með nokkur herbergi og hvert herbergi er síðan með hver og sín eigin húsgögn.
+.sp
+Vefsíður virka á sama hátt. Við erum í raun og veru bara með hólf sem innihalda önnur hólf sem innihalda síðan á endanum textan sem við viljum vinna með.
+.sp
+\fIDæmi:\fP
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Námskröfur</title>
+        <meta charset="utf\-8" />
+    </head>
+    <body>
+        <h1>Námskröfur</h1>
+        <ol>
+            <li>Nemandi skal ljúka 9 einingum á önn hið minnsta. </li>
+            <li>Heimilt er að víkja frá þessu ákvæði ef um er að ræða:</li>
+            <ul>
+                <li>Sérstaka erfiðleika í námi, svo sem lesröskun eða fötlun</li>
+                <li>Lokaönn í námi.</li>
+                <li>Nemendur á námssamningi.</li>
+                <li>Nemendur á fyrstu önn í námi.</li>
+            </ul>
+            <li>Nemandi sem fellur á önn fær aðeins heimild til innritunar á næstu ö...</li>
+            <li>Nemandi sem fallið hefur á tveimur önnum í röð eða þrem önnum samta...</li>
+            <li> Falli nemandi á önn á hann rétt á að láta þá áfanga standa þ...</li>
+        </ol>
+</html>
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+\fBLokun HTML taga\fP
+.sp
+Þið takið kannski eftir því hér fyrir ofan að við lokum ekki öllum HTML tögum. Eitt af þeim sem að við lokum ekki er <meta/> tagið. Það er vegna þess að meta tagið inniheldur ekki neitt efni í sjálfu sér og er þess í stað með svokallað \fIattribute\fP sem er í raun og veru bara stillingarartiði fyrir HTML túlkinn. Við förum miklu nánar í nokun
+.sp
+\fBHérna mæli ég með því að þið skoðið HTML kaflan í efni, hann mun hjálpa ykkur við að læra hvenær nota skal hvaða tag\fP
+.SS Attributes
+.sp
+\fBHérna kemur efni\fP
+.SS File system
+.sp
+Hérna kemur efni
+.SS Dagur tvö
+.sp
+Hérna kemur efni
+.SS Hvað er CSS?
+.SS CSS Selectors
+.SS CSS Pseudo\-selectors
+.SS CSS stýlar
+.SS Dagur þrjú
+.sp
+Hérna kemur efni
+.SS Skoðum Layout
+.SS Hvað er responsive?
+.SS Flóknari selectorar
+.SS Dagur fjögur
+.sp
+Hérna kemur efni
+.SS Hvað er Javascript?
+.SS Breytur, lykkjur og flæði
+.SS Föll, hlutir og listar
+.SS Dagur fimm
+.sp
+Hérna kemur efni
+.SS Kynning á lokaverkefni
+.SS Yfirdrifinn Innkaupalisti
+.SS Efni
+.SS HTML
+.sp
+Þetta verður erfni um html
+.SS CSS
+.sp
+CSS stendur fyrir Cascading Style Sheet, þetta er túngumál sem þú notar til að stíla síðuna þína
+.SS Javascript
+.sp
+Hérna kemur efni um Javascript
+.SH UM OKKUR
+.sp
+Þetta er kynningartexti
+.SH STYRKTARAÐILAR
+.sp
+Þetta er kynningartexti
+.INDENT 0.0
+.IP \(bu 2
+genindex
+.IP \(bu 2
+modindex
+.IP \(bu 2
+search
+.UNINDENT
+.SH AUTHOR
+Bernhard Linn, Eyþór máni
+.SH COPYRIGHT
+2016, Bernhard Linn, Eyþór máni
+.\" Generated by docutils manpage writer.
+.

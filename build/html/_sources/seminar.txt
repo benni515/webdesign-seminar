@@ -12,4 +12,4 @@ Námskeið
     seminar/day3/intro
     seminar/day4/intro
     seminar/day5/intro
-    seminar/help.rst
+    seminar/tools/intro

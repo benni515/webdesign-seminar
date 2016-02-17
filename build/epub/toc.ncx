@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="unknown"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>Webdesign-seminar 1.0 documentation</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint1" playOrder="1">
+      <navLabel>
+        <text>Námskeið í Vefþróun</text>
+      </navLabel>
+      <content src="index.html" />
+    </navPoint>
+    <navPoint id="navPoint2" playOrder="2">
+      <navLabel>
+        <text>Námskeið</text>
+      </navLabel>
+      <content src="seminar.html" />
+      <navPoint id="navPoint3" playOrder="2">
+        <navLabel>
+          <text>Námskeið</text>
+        </navLabel>
+        <content src="seminar.html" />
+      </navPoint>
+      <navPoint id="navPoint4" playOrder="3">
+        <navLabel>
+          <text>Dagur eitt</text>
+        </navLabel>
+        <content src="seminar/day1/intro.html" />
+        <navPoint id="navPoint5" playOrder="3">
+          <navLabel>
+            <text>Dagur eitt</text>
+          </navLabel>
+          <content src="seminar/day1/intro.html" />
+        </navPoint>
+        <navPoint id="navPoint6" playOrder="4">
+          <navLabel>
+            <text>Uppsetning Vefsíðu</text>
+          </navLabel>
+          <content src="seminar/day1/uppsetning.html" />
+        </navPoint>
+        <navPoint id="navPoint7" playOrder="5">
+          <navLabel>
+            <text>HTML Tög</text>
+          </navLabel>
+          <content src="seminar/day1/htmltog.html" />
+        </navPoint>
+        <navPoint id="navPoint8" playOrder="6">
+          <navLabel>
+            <text>Attributes</text>
+          </navLabel>
+          <content src="seminar/day1/attributes.html" />
+        </navPoint>
+        <navPoint id="navPoint9" playOrder="7">
+          <navLabel>
+            <text>File system</text>
+          </navLabel>
+          <content src="seminar/day1/filesystem.html" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint10" playOrder="8">
+        <navLabel>
+          <text>Dagur tvö</text>
+        </navLabel>
+        <content src="seminar/day2/intro.html" />
+        <navPoint id="navPoint11" playOrder="8">
+          <navLabel>
+            <text>Dagur tvö</text>
+          </navLabel>
+          <content src="seminar/day2/intro.html" />
+        </navPoint>
+        <navPoint id="navPoint12" playOrder="9">
+          <navLabel>
+            <text>Hvað er CSS?</text>
+          </navLabel>
+          <content src="seminar/day2/hvadercss.html" />
+        </navPoint>
+        <navPoint id="navPoint13" playOrder="10">
+          <navLabel>
+            <text>CSS Selectors</text>
+          </navLabel>
+          <content src="seminar/day2/cssselectors.html" />
+        </navPoint>
+        <navPoint id="navPoint14" playOrder="11">
+          <navLabel>
+            <text>CSS Pseudo-selectors</text>
+          </navLabel>
+          <content src="seminar/day2/csspseudoselectors.html" />
+        </navPoint>
+        <navPoint id="navPoint15" playOrder="12">
+          <navLabel>
+            <text>CSS stýlar</text>
+          </navLabel>
+          <content src="seminar/day2/cssstyling.html" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint16" playOrder="13">
+        <navLabel>
+          <text>Dagur þrjú</text>
+        </navLabel>
+        <content src="seminar/day3/intro.html" />
+        <navPoint id="navPoint17" playOrder="13">
+          <navLabel>
+            <text>Dagur þrjú</text>
+          </navLabel>
+          <content src="seminar/day3/intro.html" />
+        </navPoint>
+        <navPoint id="navPoint18" playOrder="14">
+          <navLabel>
+            <text>Skoðum Layout</text>
+          </navLabel>
+          <content src="seminar/day3/skodumlayout.html" />
+        </navPoint>
+        <navPoint id="navPoint19" playOrder="15">
+          <navLabel>
+            <text>Hvað er responsive?</text>
+          </navLabel>
+          <content src="seminar/day3/hvaderresponsive.html" />
+        </navPoint>
+        <navPoint id="navPoint20" playOrder="16">
+          <navLabel>
+            <text>Flóknari selectorar</text>
+          </navLabel>
+          <content src="seminar/day3/floknariselectorar.html" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint21" playOrder="17">
+        <navLabel>
+          <text>Dagur fjögur</text>
+        </navLabel>
+        <content src="seminar/day4/intro.html" />
+        <navPoint id="navPoint22" playOrder="17">
+          <navLabel>
+            <text>Dagur fjögur</text>
+          </navLabel>
+          <content src="seminar/day4/intro.html" />
+        </navPoint>
+        <navPoint id="navPoint23" playOrder="18">
+          <navLabel>
+            <text>Hvað er Javascript?</text>
+          </navLabel>
+          <content src="seminar/day4/hvaderjs.html" />
+        </navPoint>
+        <navPoint id="navPoint24" playOrder="19">
+          <navLabel>
+            <text>Breytur, lykkjur og flæði</text>
+          </navLabel>
+          <content src="seminar/day4/variablesnstuff.html" />
+        </navPoint>
+        <navPoint id="navPoint25" playOrder="20">
+          <navLabel>
+            <text>Föll, hlutir og listar</text>
+          </navLabel>
+          <content src="seminar/day4/functionsnstuff.html" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint26" playOrder="21">
+        <navLabel>
+          <text>Dagur fimm</text>
+        </navLabel>
+        <content src="seminar/day5/intro.html" />
+        <navPoint id="navPoint27" playOrder="21">
+          <navLabel>
+            <text>Dagur fimm</text>
+          </navLabel>
+          <content src="seminar/day5/intro.html" />
+        </navPoint>
+        <navPoint id="navPoint28" playOrder="22">
+          <navLabel>
+            <text>Kynning á lokaverkefni</text>
+          </navLabel>
+          <content src="seminar/day5/introfinal.html" />
+        </navPoint>
+        <navPoint id="navPoint29" playOrder="23">
+          <navLabel>
+            <text>Yfirdrifinn Innkaupalisti</text>
+          </navLabel>
+          <content src="seminar/day5/overkillshopper.html" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint30" playOrder="24">
+        <navLabel>
+          <text>Efni</text>
+        </navLabel>
+        <content src="seminar/tools/intro.html" />
+        <navPoint id="navPoint31" playOrder="24">
+          <navLabel>
+            <text>Efni</text>
+          </navLabel>
+          <content src="seminar/tools/intro.html" />
+        </navPoint>
+        <navPoint id="navPoint32" playOrder="25">
+          <navLabel>
+            <text>HTML</text>
+          </navLabel>
+          <content src="seminar/tools/html.html" />
+        </navPoint>
+        <navPoint id="navPoint33" playOrder="26">
+          <navLabel>
+            <text>CSS</text>
+          </navLabel>
+          <content src="seminar/tools/css.html" />
+        </navPoint>
+        <navPoint id="navPoint34" playOrder="27">
+          <navLabel>
+            <text>Javascript</text>
+          </navLabel>
+          <content src="seminar/tools/javascript.html" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint35" playOrder="28">
+      <navLabel>
+        <text>Um okkur</text>
+      </navLabel>
+      <content src="about.html" />
+    </navPoint>
+    <navPoint id="navPoint36" playOrder="29">
+      <navLabel>
+        <text>Styrktaraðilar</text>
+      </navLabel>
+      <content src="supporters.html" />
+    </navPoint>
+  </navMap>
+</ncx>

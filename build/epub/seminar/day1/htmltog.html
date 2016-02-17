@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>HTML Tög</title>
+    
+    <link rel="stylesheet" href="../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="attributes.html" title="Attributes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="uppsetning.html" title="Uppsetning Vefsíðu"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Webdesign-seminar 1.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../seminar.html" >Námskeið</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="intro.html" accesskey="U">Dagur eitt</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="html-tog">
+<h1>HTML Tög</h1>
+<p><strong>Það sem þarf að hafa í huga varðandi HTML tög</strong></p>
+<p>Núna ætlum við að nánar um HTML tög. Tilgangur HTML taga er einfaldlega sá að merkja textann sem ætlum að hafa í vefsíðunni til þess að geta unnið síðan nánar með hann í CSS og JavaScript. Í gamla daga, þegar að CSS var ekki eins stórt mál og það er núna voru vefsíður látnar líta vel út með því að láta HTML tögin sjá um að stýla textann. Þetta er ekki gert lengur, en það er mikilvægt að hafa þetta í huga vegna þess að HTML tög eru ennþá með ákveðna grunnstýla áfasta. Við munum útskýra þetta allt nánar þegar að við lærum meira um CSS.</p>
+<p><strong>Merking með HTML</strong></p>
+<p>Þegar að við erum að sjá fyrir okkur merkingar með HTML er mjög hjálplegt að ýminda sér hús. Ef að við merkjum hvern einasta hlut í herbergi eftir því hvað þessi hlutur inniheldur, verður það fljótt mjög einfalt að miða á eitthvern einn hlut í húsinu, segjum til dæmis að við viljum miða á eitthvern stól í eldhúsinu. Ef við þekkjum ekkert til hússins byrjum við kannski að skoða það að utan og spurjum okkur, er þetta rétt húsnúmer, býr rétta fólkið hérna? Til þess að fá svar við þessum spurningum er hentugt að virða húsið fyrir okkur að utan, því það veitir okkur allskyns upplýsingar um húsið án þess að þurfa að fara inn í það. Ef allt er í góðu og við erum fyrir utan rétta húsið er tilvalið að ganga bara beint inn. Þegar að við förum fyrst inn í húsið þurfum við að ákveða hvaða hluta hússins við ætlum að ganga að næst, ætlum við á efri eða neðri hæðina, hver hæð fyrir sig er síðan með nokkur herbergi og hvert herbergi er síðan með hver og sín eigin húsgögn.</p>
+<p>Vefsíður virka á sama hátt. Við erum í raun og veru bara með hólf sem innihalda önnur hólf sem innihalda síðan á endanum textan sem við viljum vinna með.</p>
+<p><em>Dæmi:</em></p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Námskröfur<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Námskröfur<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Nemandi skal ljúka 9 einingum á önn hið minnsta. <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Heimilt er að víkja frá þessu ákvæði ef um er að ræða:<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Sérstaka erfiðleika í námi, svo sem lesröskun eða fötlun<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Lokaönn í námi.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Nemendur á námssamningi.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Nemendur á fyrstu önn í námi.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Nemandi sem fellur á önn fær aðeins heimild til innritunar á næstu ö...<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Nemandi sem fallið hefur á tveimur önnum í röð eða þrem önnum samta...<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> Falli nemandi á önn á hann rétt á að láta þá áfanga standa þ...<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p><strong>Lokun HTML taga</strong></p>
+<p>Þið takið kannski eftir því hér fyrir ofan að við lokum ekki öllum HTML tögum. Eitt af þeim sem að við lokum ekki er &lt;meta/&gt; tagið. Það er vegna þess að meta tagið inniheldur ekki neitt efni í sjálfu sér og er þess í stað með svokallað <em>attribute</em> sem er í raun og veru bara stillingarartiði fyrir HTML túlkinn. Við förum miklu nánar í nokun</p>
+<p><strong>Hérna mæli ég með því að þið skoðið HTML kaflan í efni, hann mun hjálpa ykkur við að læra hvenær nota skal hvaða tag</strong></p>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Bernhard Linn, Eyþór máni.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.5.
+    </div>
+  </body>
+</html>
