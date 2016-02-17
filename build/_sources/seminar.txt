@@ -3,6 +3,7 @@ Námskeið
 
 Þetta er kynningartexti
 
+
 .. toctree::
     :maxdepth: 2
 
@@ -11,3 +12,4 @@ Námskeið
     seminar/day3/intro
     seminar/day4/intro
     seminar/day5/intro
+    seminar/tools/intro

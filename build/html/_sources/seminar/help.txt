@@ -1,0 +1,5 @@
+HTML, CSS og Javscript
+======================
+
+Hérna munum við hafa helstu hluti sem hægt er að nota í HTML, CSS og Javascript
+Einsog Minecraft API síðan sem ér á námskeiðinu
