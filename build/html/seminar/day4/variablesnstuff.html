@@ -91,7 +91,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../day3/intro.html">Dagur þrjú</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="intro.html">Dagur fjögur</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="hvaderjs.html">Hvað er Javascript?</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Breytur, lykkjur og flæði</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Breytur, lykkjur og flæði</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#breytur">Breytur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tolu-reikningar">Tölu Reikningar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#if-else-if-else">if, else if, else</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="functionsnstuff.html">Föll, hlutir og listar</a></li>
 </ul>
 </li>
@@ -151,6 +156,70 @@
             
   <div class="section" id="breytur-lykkjur-og-flaei">
 <h1>Breytur, lykkjur og flæði<a class="headerlink" href="#breytur-lykkjur-og-flaei" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="breytur">
+<h2>Breytur<a class="headerlink" href="#breytur" title="Permalink to this headline">¶</a></h2>
+<p>Breytur eru hlutir sem geyma upplýsingar, tildæmis texta eða tölu og margt fleirra. Til að nota breytu kallar maður í nafn hennar og fær þá upplýsingar sem breytan geymir. Þú munt alltaf nota breytur, án þeirra væri mjög erfitt að skrifa kóða. Svo getur maður notað breytur á hrikalega marga hætti.</p>
+<p><strong>Breytu Dæmi</strong></p>
+<div class="highlight-Javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">tala</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">texti</span> <span class="o">=</span> <span class="s2">&quot;32&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">Sannyrði</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>var &#8220;Nafn breytu&#8221; = &#8220;Gildi breytunnar&#8221;;</p>
+<p>Hérna fyrir ofan erum við með þrár breytur, til að skilgreina breytu í Javascript skrifar maður &#8220;var&#8221; svo nafn breytunar og hvað hún geymir. Fyrsta breytan í dæminu fyrir ofan geymir tölu eða int á ensku og þarf ekkert meir en að skrifa töluna sem hún geymir. Önnur breytan geymir texta eða string á ensku og til að segja breytuni að þetta sé texti geriru einfaldar gæsalappir í kringum textan eða tvöfaldar gæsalappir. Þriðja breytan geymir Sannyrði eða Bool á ensku, Sannyrði er annaðhvort true eða false og er mjög nothæf tengund af breytu. Breytur geta líka geymt marga hluti í einu og helling af öðrum hlutum sem við munum fara betur í á eftir.</p>
+</div>
+<div class="section" id="tolu-reikningar">
+<h2>Tölu Reikningar<a class="headerlink" href="#tolu-reikningar" title="Permalink to this headline">¶</a></h2>
+<p>Reikningur er mjög einfaldur hlutur í Javascript. Forritunartungumálið Javascript er mjög sveiganlegt meðan við önnur túngumál og leyfir mikið. Skellum okkur beint í dæmi.</p>
+<div class="highlight-Javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">plus</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// breytan geymir töluna 10</span>
+<span class="kd">var</span> <span class="nx">minus</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">3</span><span class="p">;</span> <span class="c1">// breytan geymir töluna 2</span>
+<span class="kd">var</span> <span class="nx">sinnum</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// breytan geymir töluna 25</span>
+<span class="kd">var</span> <span class="nx">deiling</span> <span class="o">=</span> <span class="mi">25</span> <span class="o">/</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// breytan geymir töluna 5</span>
+<span class="kd">var</span> <span class="nx">afgangur</span> <span class="o">=</span> <span class="mi">20</span> <span class="o">%</span> <span class="mi">9</span><span class="p">;</span> <span class="c1">// breytan afgangur geymir afganginn á 20 / 9 sem er 2</span>
+</pre></div>
+</div>
+<p>Hérna erum við komin með fimm breytur, þið hafið notað flest þessi merki áður fyrir utan kannski &#8220;%&#8221; sem er modulus á ensku. Það er notað til að finna afgang á deilingu. Þú getur líka reiknað með breytum. Eins og er sýnt hér í dæminu fyrir neðan.</p>
+<div class="highlight-Javascript"><div class="highlight"><pre><span></span><span class="c1">//skilgreind breyta sem geymir tölunar 5</span>
+<span class="kd">var</span> <span class="nx">tala</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="c1">//Allir þessir reikningar myndu virka einsog í dæminu fyrir ofan</span>
+<span class="kd">var</span> <span class="nx">plus</span> <span class="o">=</span> <span class="nx">tala</span> <span class="o">+</span> <span class="nx">tala</span><span class="p">;</span> <span class="c1">// breytan geymir töluna 10</span>
+<span class="kd">var</span> <span class="nx">minus</span> <span class="o">=</span> <span class="nx">tala</span> <span class="o">-</span> <span class="nx">tala</span><span class="p">;</span> <span class="c1">// breytan geymir töluna 0</span>
+<span class="kd">var</span> <span class="nx">sinnum</span> <span class="o">=</span> <span class="nx">tala</span> <span class="o">*</span> <span class="nx">tala</span><span class="p">;</span> <span class="c1">// breytan geymir töluna 25</span>
+<span class="kd">var</span> <span class="nx">deiling</span> <span class="o">=</span> <span class="nx">tala</span> <span class="o">/</span> <span class="nx">tala</span><span class="p">;</span> <span class="c1">// breytan geymir töluna 1</span>
+<span class="kd">var</span> <span class="nx">afgangur</span> <span class="o">=</span> <span class="nx">tala</span> <span class="o">%</span> <span class="nx">tala</span><span class="p">;</span> <span class="c1">// breytan geymir 0 því enginn afgangur er á deilingunni 5 deilt með 5</span>
+</pre></div>
+</div>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">Todo</p>
+<p class="last">Strengja vinnsla til að sýna strengja vinnslu</p>
+</div>
+</div>
+<div class="section" id="if-else-if-else">
+<h2>if, else if, else<a class="headerlink" href="#if-else-if-else" title="Permalink to this headline">¶</a></h2>
+<p>if, else if og else eru skipanir sem þú notar til að tékka hvort eitthvað sé satt eða ósatt. Flæði þessara skipana er mjög einfalt, ef þú gerir if setningu geturu gert else if eða else skipun eftirá þannig ef fyrsta if setninginn skilar satt þá munu hinar ekki keyra og koll af kolli. Og ef fyrsta skilar ósatt mun næsta keyrast þangað til eitthver skipun skilar satt. Ef allar skipanirnar skila ósatt er hægt að setja else skipun sem mun alltaf keyra ef hinar skila allar ósatt.</p>
+<div class="highlight-Javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">tala</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">tala</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;talan er 1&quot;</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">tala</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;talan er 2&quot;</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">tala</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;talan er 3&quot;</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;talan er ekki 1, 2 eða 3&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Hérna í dæminu fyrir ofan köllum við í skipunina if. Eftir að við köllum á skipunina if gerum við sviga og inn í hann skilirðin. Svo slaufu sviga og inn í
+þá það sem mun gerast ef skilirðin eru rétt.</p>
+<p><strong>Hérna eru dæmi um vennslavirki/skilirði</strong></p>
+<p><em>&#8220;==&#8221;</em> -Ef hlutirnir eru jafnir</p>
+<p><em>&#8221;!=&#8221;</em> -Ef hlutirnir eru ekki jafnir</p>
+<p><em>&#8220;===&#8221;</em> -Ef hlutirnir eru jafnir og sama breytu týpa</p>
+<p><em>&#8220;&lt;&#8221;</em> -Ef fyrsti hluturinn er minni en seinni hluturinn</p>
+<p><em>&#8220;&gt;&#8221;</em> -Ef fyrsti hluturinn er stærri en seinni hluturinn</p>
+<p><em>&#8220;&lt;=&#8221;</em> -Ef fyrsti hluturinn er minni eða jafnt og seinni hluturinn</p>
+<p><em>&#8220;&gt;=&#8221;</em> -Ef fyrsti hluturinn er stærri eða jafnt og seinni hluturinn</p>
+</div>
 </div>
 
 

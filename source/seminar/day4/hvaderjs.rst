@@ -17,7 +17,7 @@ Javascript er forritunartungumál, það er oftast notað með vefsíðum. Fólk
 		</body>
 	</html>
 
-Ef þú ætlar að skrifa Javascript kóða á sömu skrá og þú skrifaðir vefsíðuna þína verðuru að seigja að það. Þá notar maður script tagið. Það er líka til mun þæginlegri aðferð, með því að hafa sér skrá fyrir Javascript kóðann og tengja hann svo við síðuna, einsog við gerðum með css. Svo skrifar maður bara beint Javascript kóða í hana. Þegar þú býrð til Javascript skrá vistaru hana með .js eftir nafninu á skránni.
+Ef þú ætlar að skrifa Javascript kóða á sömu skrá og þú skrifaðir vefsíðuna þína verðuru að seigja að það. Þá notar maður script tagið. Það er líka til mun þæginlegri aðferð, með því að hafa sér skrá fyrir Javascript kóðann og tengja hann svo við síðuna, einsog við gerðum með css. Svo skrifar maður bara beint Javascript kóða í hana. Þegar þú býrð til Javascript skrá vistaru hana sem .js skrá.
 
 .. code-block:: html
 
@@ -31,7 +31,15 @@ Ef þú ætlar að skrifa Javascript kóða á sömu skrá og þú skrifaðir ve
 		</body>
 	</html>
 
-Hérna erum við búnir að tengja við Javascript skrá, kannski takiðið eftir því að maður bendir ekki alveg eins á skrár og í css, þar er notað href en með Javascript notaru src.
+Hérna erum við búnir að tengja við Javascript skrá, kannski takiði eftir því að maður bendir ekki alveg eins á skrár og í css, þar er notað href en með Javascript notaru src.
 Svo seigjum við tegundina á skránni með type, en það er valkostur.
 
-Þegar þú ert að nota script tagið til þess að benda á Javascript skrá máttu hafa hana í head eða body. En ekki á báðum.
+Þegar þú ert að nota script tagið til þess að benda á Javascript skrá máttu hafa hana í head eða body. En ekki í báðum.
+
+**Verkefni 1.** 
+
+Bættu Javascript skrá við síðuna þína. Til að vita hvort hún náði að tengjast skrifaru kóðan hér að neðan inn í Javascript skránna þína.
+
+.. code-block:: Javascript
+
+	alert("Við náðum að tengjast");

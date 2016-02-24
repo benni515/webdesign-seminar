@@ -1,7 +1,7 @@
 Dagur fjögur
 ============
 
-Hérna kemur efni
+Á dag fjögur munum við fara yfir Javascript
 
 
 .. toctree::

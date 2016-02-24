@@ -40,7 +40,7 @@ Color er þá hluturinn sem þú vilt breyta, og svo í hvað sem er blue
 
 .. todo::
     
-    Þarf að finna út hvernig ég hida og sýni upplýsingar um hvern og einn, þarf svo að setja upplýsingar inn
+    Þarf að finna út hvernig ég collapsa neðangreindu stíla
 
 *color*
 
