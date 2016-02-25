@@ -40,6 +40,6 @@ Vefsíður virka á sama hátt. Við erum í raun og veru bara með hólf sem in
 
 **Lokun HTML taga**
 
-Þið takið kannski eftir því hér fyrir ofan að við lokum ekki öllum HTML tögum. Eitt af þeim sem að við lokum ekki er <meta/> tagið. Það er vegna þess að meta tagið inniheldur ekki neitt efni í sjálfu sér og er þess í stað með svokallað *attribute* sem er í raun og veru bara stillingarartiði fyrir HTML túlkinn. Við förum miklu nánar í nokun
+Þið takið kannski eftir því hér fyrir ofan að við lokum ekki öllum HTML tögum. Eitt af þeim sem að við lokum ekki er <meta/> tagið. Það er vegna þess að meta tagið inniheldur ekki neitt efni í sjálfu sér og er þess í stað með svokallað *attribute* sem er í raun og veru bara stillingarartiði fyrir HTML túlkinn. Við förum miklu nánar í nokun	
 
 **Hérna mæli ég með því að þið skoðið HTML kaflan í efni, hann mun hjálpa ykkur við að læra hvenær nota skal hvaða tag**
