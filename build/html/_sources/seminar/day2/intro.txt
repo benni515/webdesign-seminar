@@ -1,6 +1,7 @@
 Dagur tvö
 =========
-Hérna kemur efni
+
+Á degi tvö förum við yfir hvað CSS er og hvernig við getum notað það til þess að gera vefsíðurnar okkar flottari.
 
 .. toctree::
 	:maxdepth: 1

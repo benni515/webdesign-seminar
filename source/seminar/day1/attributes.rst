@@ -11,22 +11,6 @@ Hérna er annars stuttur listi af eigindunum sem við munum nota í dag.
 .. todo::
     Líklega hægt að finna betri leið til þess að sýna þetta
 
-+------------+--------------------------------------------------+-----------+ 
-| Eigindi    | HTML tög                                         | Lýsing    | 
-+============+==================================================+===========+ 
-| id         | Virkar með öllum tögum                           |           | 
-+------------+--------------------------------------------------+-----------+ 
-| class      | Virkar með öllum tögum                           |           | 
-+------------+--------------------------------------------------+-----------+ 
-| href       | Aðallega með <a>                                 |           | 
-+------------+--------------------------------------------------+-----------+ 
-| src        | <audio>, <embed>, <iframe>, <img>,               |           |
-|            | <input>, <script>, <source>, <track>, <video>    |           | 
-+------------+--------------------------------------------------+-----------+
-| heigth     |                                                  |           | 
-+------------+--------------------------------------------------+-----------+
-| width      |                                                  |           | 
-+------------+--------------------------------------------------+-----------+
 
 Dæmi um notkun eiginda:
 ----------------------------------------------------------
@@ -78,4 +62,9 @@ Src er notað til þess að láta HTML skjalið vita að við erum að ná í ei
 
     <script src="myscripts.js"></script>
 
+
+.. todo::
+    Bæta við efni um width og height
+    
 .. _`Mozilla`: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+
