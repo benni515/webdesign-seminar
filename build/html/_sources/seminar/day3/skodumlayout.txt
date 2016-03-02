@@ -13,14 +13,14 @@ Mynd:
 
 .. image:: ../../img/holy-grail.png
 
-Uppsetining HTML taganna getur þá farið eitthvað á þennan veginn:
+Uppsetning HTML taganna getur þá farið eitthvað á þennan veginn:
 
 .. code-block:: HTML
 
     <!DOCTYPE html>
     <html>
         <head>
-            <title></title>
+            <title>Hérna er texti</title>
         </head>
         <body>
              <header>
@@ -42,3 +42,11 @@ Uppsetining HTML taganna getur þá farið eitthvað á þennan veginn:
              </footer>
         </body>
     </html>
+
+Hérna eru síðan CSS stýlarnir sem blása lífi í uppsetninguna.
+
+.. code-block:: CSS
+
+    header{
+        
+    }

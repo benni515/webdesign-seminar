@@ -11,3 +11,4 @@ Dagur fjögur
 	hvaderjs
 	variablesnstuff
 	functionsnstuff
+	innbyggdverkfaeri
