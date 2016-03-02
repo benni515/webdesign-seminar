@@ -1,7 +1,7 @@
 CSS Selectors
 =============
 
-**Hvað eru CSS selectorar**
+**Hvað eru CSS selectorar?**
 
 Núna ætlum við að fjalla stutt um það sem kallast *CSS Selectors*. Þegar að við erum að vinna með CSS og ætlum að láta eitthvað HTML *element* líta út á eitthvern sérstakann hátt þurfum við að sjálfsögðu að vita hvernig við eigum eiginlega að tilgreina hvaða HTML tag, eða hvaða týpu af HTML tögum við ætlum að stýla. Þarna koma þessir *CSS selectorar* inn okkur til mikillar aðstoðar.
 
