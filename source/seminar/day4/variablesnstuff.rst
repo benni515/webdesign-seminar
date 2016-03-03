@@ -142,7 +142,7 @@ Búðu til tvær strengja breytur og eina tölu breytu. Fyrsta strengja breytan 
 if, else if, else
 _________________
 
-if, else if og else eru skipanir sem þú notar til að tékka hvort eitthvað sé satt eða ósatt. Flæði þessara skipana er mjög einfalt, ef þú gerir if setningu geturu gert else if eða else skipun eftirá þannig ef fyrsta if setninginn skilar satt þá munu hinar ekki keyra og koll af kolli. Og ef fyrsta skilar ósatt mun næsta keyrast þangað til eitthver skipun skilar satt. Ef allar skipanirnar skila ósatt er hægt að setja else skipun sem mun alltaf keyra ef hinar skila allar ósatt.
+if, else if og else eru skipanir sem þú notar til að tékka hvort eitthver skilirði séu sönn eða ósönn. Flæði þessara skipana er mjög einfalt, ef þú gerir if setningu geturu gert else if eða else skipun eftirá þannig ef fyrsta if setninginn skilar satt þá munu hinar ekki keyra og koll af kolli. Og ef fyrsta skilar ósatt mun næsta keyrast þangað til eitthver skipun skilar satt. Ef allar skipanirnar skila ósatt er hægt að setja else skipun sem mun alltaf keyra ef hinar skila allar ósatt.
 
 Dæmi um if, else if og else skipanir
 
@@ -177,7 +177,7 @@ Hérna í dæminu fyrir ofan köllum við í skipunina if. Eftir að við köllu
 
 *">="* -Ef fyrsti hluturinn er stærri eða jafnt og seinni hluturinn
 
-Dæmi um aðra vennslavirkna
+Dæmi um hvernig nokkrir vennslavirkjar virka
 
 .. code-block:: Javascript
 	
@@ -204,6 +204,74 @@ Dæmi um aðra vennslavirkna
 
 **Verkefni 1**
 
+Búið til tvær tölu breytur, notiði if skipanir til að kíkja hver af þeim er stærri, og ef þær eru jafnar.
+
 **Verkefni 2**
 
+Búið til breytu með Sannyrði, notiði if skipanir til að finna út hvort hún sé sönn eða ósönn, skrifið þið svo út niðurstöðurnar.
+
 **Verkefni 3**
+
+Búið til þrjár tölu breytur, notiði if skipanir til að kíkja hvaða tala er hæst af þeim, gerið ykkur grein fyrir að það sé hægt að breyta tölunum en forritið mun alltaf þurfa skila réttri niðurstöðu.
+
+for lykkjur
+___________
+
+for lykkjur eða for loops sem það heitir á ensku, er skipun sem þið notið til að endurtaka einhvern kóða. Seigjum svo að þú viljir skrifa hundrað sinnum út einhvern texta, myndiru ekki handskrifa það heldur myndiru gera for lykkju. Í for lykkjum eru fjórir breytanlegir hlutir, á hvaða tölu byrjaru, á hvaða tölu endaru, skilirðin og hversu mikið bætist við eftir hverja keyrslu. Eins og með if skipanirnar þá skrifaru kóðan sem þú vilt að keyrist inni í for lykkjunni. Alltaf að reyna passa sig að gera ekki for lykkju sem keyrir endalaust.
+
+Dæmi um hvernig for lykkja sem keyrir 10 sinnum myndi virka
+
+.. code-block:: Javascript
+
+	for(var a = 1; a <= 10; a++) {
+		console.log("Hello"); //kóðinn sem mun skrifast í hvert skifti
+	}// <- Þarft ekki að setja semíkommu
+
+Þessi for lykkja keyrir 10 sinnum, maður byrjar á því að skilgreina breytu með byrjunargildinu, Svo hver skilirðinn eru þarna eru þau að forritið mun keyra á meðan a er minna eða jafnt og 10, 10 er þá endatalann. Svo síðast skrifaru hversu mikið bætist við a í hvert skifti, þarna bætum við bara einn við.
+
+Dæmi um hvernig öfug for lykkja sem keyrir 10 sinnum myndi virka
+
+.. code-block:: Javascript
+	
+	for(var a = 10; a >= 0; a--) {
+		console.log("Hello");
+		console.log(a);
+	}
+
+Þessi lykkja gerir nákvamlega sama og lykkjan fyrir ofan fyrir utan það að hún keyrist öfugt og skrifar tvær línur 10 sinnum. Breytan sem þú skilgreinir í byrjun er oft notaður sem teljari og getur þú prentað hann út og vitað þá hvar þú ert, eða notað töluna á einhverjann hátt.
+
+Dæmi um hvernig þú myndir skrifa tölu frá 1 uppí 1000
+
+.. code-block:: Javascript
+
+	for (var a = 1; a <= 1000; a++) {
+		console.log(a);
+	}
+
+Hérna erum við með for lykkju sem keyrir frá einum uppí þúsund, í hvert skifti sem hún keyrir mun hún prenta út breytuna a sem fer hækkandi.
+
+Dæmi um hvernig þú reiknar veldi með for lykkju
+
+.. code-block:: Javascript
+
+	var tala = 5;
+	var summa = tala;
+	for (var a = 1; a < 3; a++){ //for lykkjan keyrir 2 sinnum
+		summa *= tala;
+	}
+	console.log(summa);
+
+Hérna keyrir þessi for loopa 2 sinnum, og í hvert skift margfaldar breytuna summa með breytunni tala, þetta forrit myndi setja breytuna tala í 3 veldi. Því þetta myndi reikna fyrst 5*5, svo í næsta 25*5, og skrifa svo útkomuna sem myndi verða 125. Svo gætir þú breytt endatölunni í hvaða veldi sem er og breytt breytunni tala í hvaða tölu þú vilt setja í veldi.
+
+**Verkefni 1**
+
+Búiði til for lykkju sem skrifar út "Hello world" 50 sinnum.
+
+**Verkefni 2**
+
+Búiði til for lykkju sem finnur summu allra heiltala frá 0 upp í 200
+
+**Verkefni 3**
+
+Búiði til for lykkju sem prentar allar oddatölur frá 1 upp í 100
+

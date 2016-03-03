@@ -97,6 +97,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#tolu-reikningar">Tölu Reikningar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#strengja-vinnsla">Strengja vinnsla</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#if-else-if-else">if, else if, else</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#for-lykkjur">for lykkjur</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="functionsnstuff.html">Föll, hlutir og listar</a></li>
@@ -264,7 +265,7 @@
 </div>
 <div class="section" id="if-else-if-else">
 <h2>if, else if, else<a class="headerlink" href="#if-else-if-else" title="Permalink to this headline">¶</a></h2>
-<p>if, else if og else eru skipanir sem þú notar til að tékka hvort eitthvað sé satt eða ósatt. Flæði þessara skipana er mjög einfalt, ef þú gerir if setningu geturu gert else if eða else skipun eftirá þannig ef fyrsta if setninginn skilar satt þá munu hinar ekki keyra og koll af kolli. Og ef fyrsta skilar ósatt mun næsta keyrast þangað til eitthver skipun skilar satt. Ef allar skipanirnar skila ósatt er hægt að setja else skipun sem mun alltaf keyra ef hinar skila allar ósatt.</p>
+<p>if, else if og else eru skipanir sem þú notar til að tékka hvort eitthver skilirði séu sönn eða ósönn. Flæði þessara skipana er mjög einfalt, ef þú gerir if setningu geturu gert else if eða else skipun eftirá þannig ef fyrsta if setninginn skilar satt þá munu hinar ekki keyra og koll af kolli. Og ef fyrsta skilar ósatt mun næsta keyrast þangað til eitthver skipun skilar satt. Ef allar skipanirnar skila ósatt er hægt að setja else skipun sem mun alltaf keyra ef hinar skila allar ósatt.</p>
 <p>Dæmi um if, else if og else skipanir</p>
 <div class="highlight-Javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">tala</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="k">if</span><span class="p">(</span><span class="nx">tala</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
@@ -287,7 +288,7 @@
 <p><em>&#8220;&gt;&#8221;</em> -Ef fyrsti hluturinn er stærri en seinni hluturinn</p>
 <p><em>&#8220;&lt;=&#8221;</em> -Ef fyrsti hluturinn er minni eða jafnt og seinni hluturinn</p>
 <p><em>&#8220;&gt;=&#8221;</em> -Ef fyrsti hluturinn er stærri eða jafnt og seinni hluturinn</p>
-<p>Dæmi um aðra vennslavirkna</p>
+<p>Dæmi um hvernig nokkrir vennslavirkjar virka</p>
 <div class="highlight-Javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">tala1</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">tala2</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">Sannyrði</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
@@ -311,8 +312,53 @@
 </pre></div>
 </div>
 <p><strong>Verkefni 1</strong></p>
+<p>Búið til tvær tölu breytur, notiði if skipanir til að kíkja hver af þeim er stærri, og ef þær eru jafnar.</p>
 <p><strong>Verkefni 2</strong></p>
+<p>Búið til breytu með Sannyrði, notiði if skipanir til að finna út hvort hún sé sönn eða ósönn, skrifið þið svo út niðurstöðurnar.</p>
 <p><strong>Verkefni 3</strong></p>
+<p>Búið til þrjár tölu breytur, notiði if skipanir til að kíkja hvaða tala er hæst af þeim, gerið ykkur grein fyrir að það sé hægt að breyta tölunum en forritið mun alltaf þurfa skila réttri niðurstöðu.</p>
+</div>
+<div class="section" id="for-lykkjur">
+<h2>for lykkjur<a class="headerlink" href="#for-lykkjur" title="Permalink to this headline">¶</a></h2>
+<p>for lykkjur eða for loops sem það heitir á ensku, er skipun sem þið notið til að endurtaka einhvern kóða. Seigjum svo að þú viljir skrifa hundrað sinnum út einhvern texta, myndiru ekki handskrifa það heldur myndiru gera for lykkju. Í for lykkjum eru fjórir breytanlegir hlutir, á hvaða tölu byrjaru, á hvaða tölu endaru, skilirðin og hversu mikið bætist við eftir hverja keyrslu. Eins og með if skipanirnar þá skrifaru kóðan sem þú vilt að keyrist inni í for lykkjunni. Alltaf að reyna passa sig að gera ekki for lykkju sem keyrir endalaust.</p>
+<p>Dæmi um hvernig for lykkja sem keyrir 10 sinnum myndi virka</p>
+<div class="highlight-Javascript"><div class="highlight"><pre><span></span><span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">a</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">a</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">);</span> <span class="c1">//kóðinn sem mun skrifast í hvert skifti</span>
+<span class="p">}</span><span class="c1">// &lt;- Þarft ekki að setja semíkommu</span>
+</pre></div>
+</div>
+<p>Þessi for lykkja keyrir 10 sinnum, maður byrjar á því að skilgreina breytu með byrjunargildinu, Svo hver skilirðinn eru þarna eru þau að forritið mun keyra á meðan a er minna eða jafnt og 10, 10 er þá endatalann. Svo síðast skrifaru hversu mikið bætist við a í hvert skifti, þarna bætum við bara einn við.</p>
+<p>Dæmi um hvernig öfug for lykkja sem keyrir 10 sinnum myndi virka</p>
+<div class="highlight-Javascript"><div class="highlight"><pre><span></span><span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">a</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">a</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">);</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Þessi lykkja gerir nákvamlega sama og lykkjan fyrir ofan fyrir utan það að hún keyrist öfugt og skrifar tvær línur 10 sinnum. Breytan sem þú skilgreinir í byrjun er oft notaður sem teljari og getur þú prentað hann út og vitað þá hvar þú ert, eða notað töluna á einhverjann hátt.</p>
+<p>Dæmi um hvernig þú myndir skrifa tölu frá 1 uppí 1000</p>
+<div class="highlight-Javascript"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">a</span> <span class="o">&lt;=</span> <span class="mi">1000</span><span class="p">;</span> <span class="nx">a</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Hérna erum við með for lykkju sem keyrir frá einum uppí þúsund, í hvert skifti sem hún keyrir mun hún prenta út breytuna a sem fer hækkandi.</p>
+<p>Dæmi um hvernig þú reiknar veldi með for lykkju</p>
+<div class="highlight-Javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">tala</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">summa</span> <span class="o">=</span> <span class="nx">tala</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">a</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">a</span><span class="o">++</span><span class="p">){</span> <span class="c1">//for lykkjan keyrir 2 sinnum</span>
+        <span class="nx">summa</span> <span class="o">*=</span> <span class="nx">tala</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">summa</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Hérna keyrir þessi for loopa 2 sinnum, og í hvert skift margfaldar breytuna summa með breytunni tala, þetta forrit myndi setja breytuna tala í 3 veldi. Því þetta myndi reikna fyrst 5*5, svo í næsta 25*5, og skrifa svo útkomuna sem myndi verða 125. Svo gætir þú breytt endatölunni í hvaða veldi sem er og breytt breytunni tala í hvaða tölu þú vilt setja í veldi.</p>
+<p><strong>Verkefni 1</strong></p>
+<p>Búiði til for lykkju sem skrifar út &#8220;Hello world&#8221; 50 sinnum.</p>
+<p><strong>Verkefni 2</strong></p>
+<p>Búiði til for lykkju sem finnur summu allra heiltala frá 0 upp í 200</p>
+<p><strong>Verkefni 3</strong></p>
+<p>Búiði til for lykkju sem prentar allar oddatölur frá 1 upp í 100</p>
 </div>
 </div>
 
