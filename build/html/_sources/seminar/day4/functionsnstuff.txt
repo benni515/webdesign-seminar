@@ -1,2 +1,115 @@
 Föll, hlutir og listar
 ======================
+
+Föll
+____
+
+Föll eða functions á ensku líka kallað aðferðir, Console.log() er innbyggt fall í Javascript, það eru til helling af innbyggðum Javascript föllum sem við getum notað. Það er eitt að nota fall en það er annað að búa það til sem við ætlum að gera í þessum kafla.
+
+Dæmi um fall
+
+.. code-block:: Javascript
+	
+	var ta1 = 5;
+	var ta2 = 10;
+
+	//fallið
+	function times(tala1,tala2) {
+		return tala1 * tala2;
+	}
+	var sum = times(ta1,ta2);
+
+Hérna fyrir ofan erum við með mjög einfalt fall, til að skilgreina að þú sért að búa til fall skrifaru function, svo kemur nafnið á fallinu sem í dæminu fyrir ofan myndi vera times. Svo geriru sviga, og inni í svigunum eru hlutir sem fallið tekur við. Semsagt ef þú kallar í þetta fall, vill fallið fá 2 hluti sem hún mun nota inni í fallinu. Við seigjum að breytann sum sé jafnt og fallið times með tveim breytum. Þá kölluð við á fallið með þessum tveim breytum sem return mun svo skila margfeldi þeirra. 
+
+.. todo::
+	
+	Betri útskýringar á föllum og hvernig þær hegða sér.
+
+Fall sem reiknar ummál kassa
+
+.. code-block:: Javascript
+
+	var lengd = 5;
+	var breidd = 10;
+
+	function Reiknaummal(b,l) {
+		return b + b + l + l;
+	}
+	var ummal = Reiknaummal(breidd,lengd);
+
+Þetta fall tekur inn tvær tölur, ein sem myndi vera breidd og önnur sem myndi vera lengd. Svo reiknar út ummálið af kassa með tölunum og skilar niðurstöðunni.
+
+Fall sem finnur út hvaða tala er hæst
+
+.. code-block:: Javascript
+
+	var tala1 = 10;
+	var tala2 = 20;
+	function Staerri(t1,t2) {
+		if(t1 > t2) {
+			return "Tala eitt er stærri en tala tvö";
+		}
+		else if(t1 < t2) {
+			return "Tala tvö er stærri en tala eitt";
+		}
+		else {
+			return "Þær eru jafn stórar";
+		}
+	}
+	console.log(Staerri(tala1,tala2))
+
+Þetta fall tekur inn tvær tölur og finnur út hvor þeirra er stærri. Fallið skilar svo streng þannig hægt sé að kalla þetta í console.log fallinu.
+
+**Verkefni 1**
+
+Búiði til fall sem margfaldar tölu með 20
+
+**Verkefni 2**
+
+Búiði til fall sem tekur inn tvær tölur, og skrifar svo út allar tölur sem eru á milli þessara talna.
+
+**Verkefni 3**
+
+Búiði til fall sem sameinar tvo strengi.
+
+Hlutir
+______
+
+
+Í Javascript geturu búið til hluti eða Objects á ensku. Flestir hlutir sem þú myndir búa til hafa einhverja eiginleika og hluti sem þeir geta gert.
+
+Dæmi um hlut/Object
+
+.. code-block:: Javascript
+
+	var person = {
+		fyrstanafn : "Henry",
+		eftirnafn : "Joe",
+		aldur : 50,
+		haed : 180
+	}
+
+Hérna erum við með hlut sem heitir person og geymir fjórar breytur. Hver breyta sem hann geymir hefur sitt eigið nafn þannig þetta er einsog breyta sem hefur fjórar aðrar breytur inni í sér. Eftir hvern eiginleika sem þú býrð til seturu kommu eftir hann ef þú ætlar að hafa fleirri eiginleika. Þannig síðasti eiginleikinn myndi ekki hafa kommu.
+
+Hvernig við myndum kalla á breyturnar eða breyta þeim
+
+.. code-block:: Javascript
+	
+	//Myndi skrifa út firstname sem væri Henry
+	console.log(person.firstname);
+	//breytir firstname í Jóhannes
+	person.firstname = "Jóhannes";
+
+Hlutir geta líka geymt í sér föll, einsog ef við myndum búa til hlut sem væri maður, gæti hann verið með fall sem myndi seigja nafnið hans.
+
+.. code-block:: Javascript
+
+	var person = {
+		fyrstanafn : "Birkir",
+		eftirnafn : "Gunni",
+		aldur : 15,
+		haed : 190,
+		segjanafn : function() {
+			return this.fyrstanafn + " " + this.eftirnafn;
+		}
+	}
