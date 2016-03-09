@@ -35,7 +35,8 @@ Vefsíður virka á sama hátt. Við erum í raun og veru bara með hólf sem in
                 <li>Nemandi sem fellur á önn fær aðeins heimild til innritunar á næstu ö...</li>
                 <li>Nemandi sem fallið hefur á tveimur önnum í röð eða þrem önnum samta...</li>
                 <li> Falli nemandi á önn á hann rétt á að láta þá áfanga standa þ...</li>
-            </ol>	
+            </ol>
+        </body>
     </html>
 
 **Lokun HTML taga**
