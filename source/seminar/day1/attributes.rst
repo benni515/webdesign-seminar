@@ -68,3 +68,8 @@ Src er notað til þess að láta HTML skjalið vita að við erum að ná í ei
     
 .. _`Mozilla`: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
 
+Verkefni 1
+----------
+
+* Búðu til lista af hlekkjum, opna vefsíðurnar í nýjum glugga
+* Setjum inn eitthverja mynd í ákveðnum stærðum

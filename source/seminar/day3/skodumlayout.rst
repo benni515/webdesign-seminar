@@ -50,3 +50,10 @@ Hérna eru síðan CSS stýlarnir sem blása lífi í uppsetninguna.
     header{
         
     }
+
+Verkefni 3
+----------
+
+* Búum til layout samkvæmt LINKUR AÐ MYND
+* Skoðum layout þekktra vefsíðna
+* Betrumbætum beinagrindina okkar
