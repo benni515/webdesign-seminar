@@ -11,8 +11,6 @@ Hérna er annars stuttur listi af eigindunum sem við munum nota í dag.
 .. todo::
     Líklega hægt að finna betri leið til þess að sýna þetta
 
-<<<<<<< HEAD
-=======
 +------------+--------------------------------------------------+-----------+ 
 | Eigindi    | HTML tög                                         | Lýsing    | 
 +============+==================================================+===========+ 
@@ -29,7 +27,6 @@ Hérna er annars stuttur listi af eigindunum sem við munum nota í dag.
 +------------+--------------------------------------------------+-----------+
 | width      |                                                  |           | 
 +------------+--------------------------------------------------+-----------+
->>>>>>> 583de30... Bætti við efni í attributes kaflann
 
 Dæmi um notkun eiginda:
 ----------------------------------------------------------
@@ -81,8 +78,6 @@ Src er notað til þess að láta HTML skjalið vita að við erum að ná í ei
 
     <script src="myscripts.js"></script>
 
-<<<<<<< HEAD
-
 .. todo::
     Bæta við efni um width og height
     
@@ -93,6 +88,3 @@ Verkefni 1
 
 * Búðu til lista af hlekkjum, opna vefsíðurnar í nýjum glugga
 * Setjum inn eitthverja mynd í ákveðnum stærðum
-=======
-.. _`Mozilla`: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
->>>>>>> 583de30... Bætti við efni í attributes kaflann
