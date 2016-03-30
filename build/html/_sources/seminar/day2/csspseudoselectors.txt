@@ -20,3 +20,4 @@ Annað dæmi, hérna notum við *:visited* til þess að breyta lit hlekkja sem 
     a:visited{
         color: purple;
     }
+

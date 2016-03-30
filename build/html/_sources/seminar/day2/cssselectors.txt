@@ -98,3 +98,5 @@ Núna erum við í raun og veru að segja "allur texti inni í <li> tögum sem e
 .. todo::
 
     Bæta inn í þetta link þar sem að við tölum um nested HTML tög og hvernig það virkar. 
+
+

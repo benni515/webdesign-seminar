@@ -10,8 +10,8 @@ Námskeið í Vefþróun
 	:maxdepth: 3
 
 	seminar
+	projects
 	about
-	supporters
 
 Indices and tables
 ==================
