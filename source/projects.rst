@@ -19,3 +19,4 @@ Verkefni á vefþróunarnámskeið Kóder.is.
     projects/verkefni10
     projects/verkefni11
     projects/verkefni12
+    projects/verkefni13
