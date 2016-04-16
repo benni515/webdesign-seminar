@@ -3,16 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 h1, main, footer{
-    margin: 0 10px;    
-    margin: 0 10px;
-}
-main, footer{
-    margin: 0 10px;
+  width: 30%;
+  margin: auto;
 }
 
+
 html, button{
-    font-family:'Verdana',Arial,sans-serif;
+    font-family:'Helvetica',Arial,sans-serif;
     font-size:16px;
 }
 header {
@@ -55,6 +54,7 @@ button {
     transition: 0.3s ease-in-out;
     cursor:pointer;
 }
+
 button:hover {
     transition: 0.7s ease-in-out;
     background-color:#7cce00;

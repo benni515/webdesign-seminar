@@ -11,6 +11,7 @@ form.addEventListener('submit', function(ev){
         innkaupalisti.innerHTML += '<li>' + vara + '</li>';
         localStorage.geymsla = innkaupalisti.innerHTML;
     }
+
 });
 
 
@@ -31,3 +32,6 @@ innkaupalisti.addEventListener('click', function(ev){
 if (localStorage.geymsla !== undefined) {
     innkaupalisti.innerHTML = localStorage.geymsla;
 }
+
+textabox.focus();
+textabox.select();
